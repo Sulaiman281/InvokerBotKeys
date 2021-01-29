@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="909.0" prefWidth="581.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="581.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="244.0" text="Invoker Bot Keys">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="enable_keys" mnemonicParsing="false" text="Disable" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="1. Sun Strike">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="56.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Sun_Strike.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="sunStrike" alignment="CENTER" prefHeight="37.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_sunStrike_key" text="update key" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="2. Cold Snap">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="55.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Cold_Snap.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cold_snap" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_codeSnap_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="97.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="3. EMP">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/EMP.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="emp" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_emp_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="184.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="4. ICE Wall">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="69.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Ice_Wall.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="ice_wall" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_iceWall_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="271.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="5. Ghost Walk">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="46.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Ghost_Walk.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="ghost_walk" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_ghostWalk_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="358.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="6. Tornado">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="71.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Tornado.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="tornado" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_tornado_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="445.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="7. Alacrity">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="79.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Alacrity.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="alacrity" alignment="CENTER" onAction="#update_alacrity_key" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_alacrity_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="532.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="8. Forge Spirit">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="45.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Forge_Spirit.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="forge_spirit" alignment="CENTER" onAction="#update_forgeSpirit_key" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_forgeSpirit_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="619.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="9. Chaos Meteor">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="24.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Chaos_Meteor.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="chaos_meteor" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_chaosMeteor_key" text="update key" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="706.0" prefHeight="60.0" prefWidth="500.0" spacing="15.0">
+               <children>
+                  <Label text="10. Deafening Blast">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Deafening_Blast.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="deafening_blast" alignment="CENTER" prefHeight="35.0" prefWidth="90.0" promptText="0">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#update_deafeningBlast_key" text="update key" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
